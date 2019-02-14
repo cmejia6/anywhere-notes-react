@@ -1,9 +1,9 @@
 import React from 'react'
 import '../styles/NotePage.css'
 
-const NotePage = () => {
+const NotePage = (props) => {
   return (
-    <div className="container">
+    <div className="page-container">
 
       <div className="input-field">
         <textarea rows="8" className="a" type="text" placeholder="Write your notes here...">

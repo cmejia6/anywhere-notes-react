@@ -4,6 +4,21 @@ import NoteButton from './NoteButton';
 import NotePage from './NotePage';
 
 class NotesMain extends Component {
+  constructor(){
+      super()
+
+      this.state={
+        displayNotes : false,
+      }
+
+      this.toggleDisplayNotes = this.toggleDisplayNotes.bind(this)
+  }
+
+  toggleDisplayNotes(){
+    this.setState(() => ({displayNotes : !this.state.displayNotes}))
+  }
+
+
   render() {
     return (
       <div>
@@ -15,14 +30,30 @@ class NotesMain extends Component {
           </div>
 
           <div className="b">
-            <NoteButton />
+            <NoteButton 
+              toggleDisplayNotes={this.toggleDisplayNotes}
+              pageType={'new'}
+            />
           </div>
 
         </header>
 
-        <div className="note-page">
-          <NotePage />
-        </div>
+        {
+          !this.state.displayNotes &&
+          <div className="note-button-saved">
+            <NoteButton pageType={'saved'} />
+          </div>
+        }
+
+        {
+          this.state.displayNotes &&
+
+          <div className="note-page">
+            <NotePage />
+          </div>
+
+
+        }
 
       </div>
     );

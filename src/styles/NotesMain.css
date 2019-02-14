@@ -3,10 +3,6 @@ header {
   justify-content: space-between;
 }
 
-header .a {
-
-}
-
 header .a > h3{
   margin-left: 1em;
   font-size: 3em;
@@ -15,4 +11,8 @@ header .a > h3{
 header .b {
   margin-right: 1em;
   font-size: 3em;
+}
+
+.note-button-saved{
+  
 }

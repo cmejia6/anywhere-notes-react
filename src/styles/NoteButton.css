@@ -1,3 +1,18 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
 button > .a{
     font-weight: bolder;
+}
+
+.note-sample-display{
+    padding-left: 1em;
+    height: 20em;
+
+    border: .2em solid rgba(0, 0, 0, .2);
+    width: 72%;
+    font-size: 1.5em;
+    height: 8em;
 }
