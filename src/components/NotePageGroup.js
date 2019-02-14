@@ -1,5 +1,4 @@
 import React from 'react'
-
 import NotePage from './NotePage';
 
 import '../styles/NotePageGroup.css'

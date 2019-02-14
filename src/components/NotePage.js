@@ -6,13 +6,18 @@ const NotePage = (props) => {
   return (
     <div className="">
 
-      <div className="">
+    <div className="row">
+      <div className="col">
         <textarea class="form-control" rows="10"></textarea>
       </div>
+    </div>
+    
 
-      <button className ="save col btn btn-success">
-        Save
-      </button>
+      <div className="row">
+        <div className="col">
+          <button className ="save col btn btn-success">Save</button>
+        </div>
+      </div>
 
     </div>
   )

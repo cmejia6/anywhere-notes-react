@@ -2,7 +2,7 @@ import React from 'react'
 
 import '../styles/Header.css'
 
-const Header = () => {
+const Header = (props) => {
   return (
     <div className="">
       <div className="row text-center">
@@ -11,7 +11,7 @@ const Header = () => {
           </div>
 
           <div className="col p-3">
-            <button>
+            <button onClick={props.toggleDisplayNotes}>
               +
             </button>
           </div>
