@@ -1,5 +1,9 @@
-.page-container{
-    display: flex;
+textarea{
+    height:100px;
+}
+
+
+/*    display: flex;
     flex-direction: column;
     margin-top: 3%;
     width: 78%;
@@ -18,5 +22,5 @@
 .page-container .save {
     width: 100%;
     height: 4em;
-}
+}*/
 

@@ -32,7 +32,7 @@ class NotesMain extends Component {
         
         {
           !this.state.displayNotes &&
-          <div className="row">
+          <div className="">
 
             <NotePageGroup />
           </div>

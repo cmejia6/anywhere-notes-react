@@ -1,18 +1,17 @@
 import React from 'react'
-//import '../styles/NotePage.css'
+import '../styles/NotePage.css'
 
 const NotePage = (props) => {
   return (
-    <div className="page-container">
+    <div className="">
 
-      <div className="input-field">
-        <textarea rows="8" className="a" type="text" placeholder="Write your notes here...">
-        </textarea>
+      <div className="">
+        <textarea class="form-control" rows="10"></textarea>
       </div>
 
-      <button className ="save btn btn-success">
-            Save
-        </button>
+      <button className ="save col btn btn-success">
+        Save
+      </button>
 
     </div>
   )

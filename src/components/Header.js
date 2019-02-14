@@ -4,7 +4,7 @@ import '../styles/Header.css'
 
 const Header = () => {
   return (
-    <div className="container">
+    <div className="">
       <div className="row text-center">
           <div className="col p-3">
             <h3 className="">Notes</h3>
