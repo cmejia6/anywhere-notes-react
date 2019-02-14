@@ -1,9 +1,18 @@
-header .a {
+header {
   display: flex; 
-  justify-content: left;
+  justify-content: space-between;
+}
+
+header .a {
+
 }
 
 header .a > h3{
   margin-left: 1em;
+  font-size: 3em;
+}
+
+header .b {
+  margin-right: 1em;
   font-size: 3em;
 }

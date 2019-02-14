@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../logo.svg';
 import '../styles/NotesMain.css';
+import NoteButton from './NoteButton';
 
 class NotesMain extends Component {
   render() {
@@ -9,8 +9,12 @@ class NotesMain extends Component {
 
         <header>
 
-          <div class="a">
+          <div className="a">
             <h3>Notes</h3>
+          </div>
+
+          <div className="b">
+            <NoteButton />
           </div>
 
         </header>
