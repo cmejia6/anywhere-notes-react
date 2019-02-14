@@ -5,8 +5,6 @@ const NoteButton = () => {
   return (
     <div>
 
-
-
         {
             <button className="btn btn-primary btn-lg">
                 <h3 className="a">
@@ -14,9 +12,6 @@ const NoteButton = () => {
                 </h3>
             </button>
         }
-
-
-
 
     </div>
   )
