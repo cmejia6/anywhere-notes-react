@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/NotePage.css'
+//import '../styles/NotePage.css'
 
 const NotePage = (props) => {
   return (
