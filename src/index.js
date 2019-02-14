@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import NotesMain from './component/NotesMain';
+import NotesMain from './components/NotesMain';
 import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(<NotesMain />, document.getElementById('root'));
