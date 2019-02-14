@@ -2,3 +2,11 @@
     background-color: grey;
     border: 2px solid black;
 }
+
+.note-page-container{
+    height: 8em;
+}
+
+.note-page-container > h3{
+    border-bottom: 2px solid black;
+}

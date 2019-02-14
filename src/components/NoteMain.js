@@ -33,7 +33,6 @@ class NotesMain extends Component {
         {
           !this.state.displayNotes &&
           <div className="">
-
             <NotePageGroup />
           </div>
         }
