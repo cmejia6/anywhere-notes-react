@@ -13,9 +13,16 @@ class NotesMain extends Component {
 
       this.state={
         displayNotes : false,
+        notes: []
       }
 
       this.toggleDisplayNotes = this.toggleDisplayNotes.bind(this)
+  }
+
+  componentDidMount() {
+    fetch('/api/notes')
+    .then(res => res.json())
+    .then(notes => this.setState({notes}, () => console.log('Notes fetched...', notes)))
   }
 
   toggleDisplayNotes(){
@@ -43,7 +50,8 @@ class NotesMain extends Component {
         {
           !this.state.displayNotes &&
           <div className="">
-            <NotePageGroup />
+            <NotePageGroup
+            notes = {this.state.notes} />
           </div>
         }
 

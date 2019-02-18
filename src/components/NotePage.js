@@ -8,7 +8,7 @@ const NotePage = (props) => {
 
     <div className="row">
       <div className="col">
-        <textarea class="form-control" rows="10"></textarea>
+        <textarea className="form-control" rows="10"></textarea>
       </div>
     </div>
     
