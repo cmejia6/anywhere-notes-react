@@ -1,30 +1,31 @@
 {
-  "name": "anywhere-notes",
-  "version": "0.1.0",
-  "private": true,
-  "homepage": "https://cmejia6.github.io/anywhere-notes-react/",
+  "name": "anywhere-notes-react",
+  "version": "1.0.0",
+  "description": "Take and save note anywhere",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
   "dependencies": {
     "gh-pages": "^2.0.1",
-    "react": "^16.8.1",
-    "react-dom": "^16.8.1",
-    "react-scripts": "2.1.5"
+    "concurrently": "^3.5.1",
+    "express": "^4.16.4"
   },
-  "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "nodemon": "^1.14.6"
   },
-  "proxy": "http://localhost:5000",
-  "eslintConfig": {
-    "extends": "react-app"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cmejia6/anywhere-notes-react.git"
   },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ]
+  "author": "alex",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cmejia6/anywhere-notes-react/issues"
+  },
+  "homepage": "https://github.com/cmejia6/anywhere-notes-react#readme"
 }

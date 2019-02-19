@@ -12,7 +12,7 @@ const NotePageGroup = (props) => {
         <div className="row">
           <div className="col note-page-container">
             <h3>{notes.title}</h3>
-            <p>{notes.noteSave}</p>
+            <p>{notes.note}</p>
           </div>
         </div>
           )
