@@ -6,7 +6,7 @@ const app = express();
 const port = 5000;
 var db
 
-MongoClient.connect('mongodb://ALEX:password@cluster0-shard-00-00-nv6gw.gcp.mongodb.net:27017,cluster0-shard-00-01-nv6gw.gcp.mongodb.net:27017,cluster0-shard-00-02-nv6gw.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', { useNewUrlParser: true }, (err, database) => {
+MongoClient.connect('mongodb://ALEX:pw@cluster0-shard-00-00-nv6gw.gcp.mongodb.net:27017,cluster0-shard-00-01-nv6gw.gcp.mongodb.net:27017,cluster0-shard-00-02-nv6gw.gcp.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true', { useNewUrlParser: true }, (err, database) => {
     if (err) throw console.log(err)
 
     db = database.db('example-stuff')

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-
 import Header from './Header';
 import NotePage from './NotePage';
 import NotePageGroup from './NotePageGroup';
@@ -19,10 +18,6 @@ class NotesMain extends Component {
   }
 
   componentDidMount() {
-    const input = {
-      'title':'one',
-      'note':'noteaddes'
-    }
     fetch('/api/notes')/*, {
       method: 'POST',  
       //body: JSON.stringify(input),  
@@ -44,8 +39,7 @@ class NotesMain extends Component {
 
         <div className="">
             <Header 
-              toggleDisplayNotes={this.toggleDisplayNotes}
-              />
+              toggleDisplayNotes={this.toggleDisplayNotes}/>
         </div>
         
         {
@@ -62,8 +56,6 @@ class NotesMain extends Component {
             notes = {this.state.notes} />
           </div>
         }
-
-
 
       </div>
     );

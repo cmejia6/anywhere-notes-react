@@ -14,7 +14,7 @@ const NotePageGroup = (props) => {
         <div className="row">
           
           <div className="col note-page-container">
-            <h3 key={notes.id}>{notes.title}</h3>
+            <h3 key={notes.id}>{notes.title == "" ? "No Title" : notes.title}</h3>
             <p>{notes.note}</p>
           </div>
 
