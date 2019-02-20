@@ -6,7 +6,6 @@ import NotePageGroup from './NotePageGroup';
 
 import '../styles/NotesMain.css';
 
-
 class NotesMain extends Component {
   constructor(){
       super()
@@ -20,7 +19,17 @@ class NotesMain extends Component {
   }
 
   componentDidMount() {
-    fetch('/api/notes')
+    const input = {
+      'title':'one',
+      'note':'noteaddes'
+    }
+    fetch('/api/notes')/*, {
+      method: 'POST',  
+      //body: JSON.stringify(input),  
+      headers:{
+        'Content-Type': 'application/json'
+       }
+    })*/
     .then(res => res.json())
     .then(notes => this.setState({notes}, () => console.log('Notes fetched...', notes)))
   }
@@ -28,7 +37,6 @@ class NotesMain extends Component {
   toggleDisplayNotes(){
     this.setState(() => ({displayNotes : !this.state.displayNotes}))
   }
-
 
   render() {
     return (

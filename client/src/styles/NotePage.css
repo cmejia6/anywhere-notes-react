@@ -1,13 +1,13 @@
-textarea{
-    height:100px;
+input {
+    width: 100%;
 }
 
-.col {
-
+.note-holder textarea{
+    width: 100%;
 }
 
 
-/*    display: flex;
+/*display: flex;
     flex-direction: column;
     margin-top: 3%;
     width: 78%;
